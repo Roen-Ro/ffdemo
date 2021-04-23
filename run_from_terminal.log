@@ -1,9 +1,7 @@
-
-luoliangfu-iMac:~ jiangwenbin$ cd /Users/jiangwenbin/Desktop/videoSample 
-luoliangfu-iMac:videoSample jiangwenbin$ ./ffdemo ./
-2021-04-23 13:16:47.717 ffdemo[37443:2578645] start ffdemo ---->>
-2021-04-23 13:16:47.718 ffdemo[37443:2578645] start ffprobe
-2021-04-23 13:16:47.718 ffdemo[37443:2578645] start task with arguments:
+luoliangfu-iMac:videoSample jiangwenbin$ ./ffdemo ./SaMple.mkv
+2021-04-23 13:32:35.712 ffdemo[37557:2586168] start ffdemo ---->>
+2021-04-23 13:32:35.712 ffdemo[37557:2586168] start ffprobe
+2021-04-23 13:32:35.712 ffdemo[37557:2586168] start task with arguments:
 (
     "-v",
     quiet,
@@ -11,11 +9,13 @@ luoliangfu-iMac:videoSample jiangwenbin$ ./ffdemo ./
     json,
     "-show_format",
     "-show_streams",
-    "/Users/jiangwenbin/Desktop/videoSample/"
+    "/Users/jiangwenbin/Desktop/videoSample/SaMple.mkv"
 )
->taskExc1 finish
-2021-04-23 13:16:48.261 ffdemo[37443:2578645] finished ffprobe
-2021-04-23 13:16:48.261 ffdemo[37443:2578645] start task with arguments:
+>>>taskExc1 finish
+2021-04-23 13:32:35.777 ffdemo[37557:2586168] finished ffprobe
+2021-04-23 13:32:35.777 ffdemo[37557:2586168] ffmpeg command start:
+-y -ss 00:00:15 -t 00:00:20 -i /Users/jiangwenbin/Desktop/videoSample/SaMple.mkv -vcodec copy -acodec copy /Users/jiangwenbin/Desktop/videoSample/output.mp4
+2021-04-23 13:32:35.777 ffdemo[37557:2586168] start task with arguments:
 (
     "-y",
     "-ss",
@@ -23,12 +23,12 @@ luoliangfu-iMac:videoSample jiangwenbin$ ./ffdemo ./
     "-t",
     "00:00:20",
     "-i",
-    "/Users/jiangwenbin/Desktop/videoSample/",
+    "/Users/jiangwenbin/Desktop/videoSample/SaMple.mkv",
     "-vcodec",
     copy,
     "-acodec",
     copy,
-    "/Users/jiangwenbin/Desktop/output.mp4"
+    "/Users/jiangwenbin/Desktop/videoSample/output.mp4"
 )
 ffmpeg version 4.1.3 Copyright (c) 2000-2019 the FFmpeg developers
   built with Apple LLVM version 10.0.1 (clang-1001.0.46.4)
