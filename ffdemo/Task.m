@@ -32,6 +32,8 @@ NSError * taskExc1(NSString *launchPath, NSArray <NSString *>*arguments, NSStrin
     }
     else
         task.arguments = arguments;
+    
+    NSLog(@"start task with arguments:\n%@",task.arguments);
    
 //    task.terminationHandler = ^(NSTask *tsk) {
 //        printf("Task terminatted with reason %ld\n",(long)tsk.terminationReason);
